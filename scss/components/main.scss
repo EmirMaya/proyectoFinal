@@ -5,6 +5,15 @@ main {
     margin-top: 30px;
 }
 
+.prodTitle {
+    color: $bg-h1;
+    padding-top: 120px;
+    font-style: normal;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
 .iconContainer {
     margin: 50px auto;
     @extend %flex;
@@ -38,7 +47,6 @@ main {
 }
 
 .productBox {
-    padding-top: 80px;
     margin: 40px auto;
    @extend %flex;
 }
