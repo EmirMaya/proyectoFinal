@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.bodyContainer {
+  background-color: #d1d1d1;
+}
+
+/*extends*/
+.redesUl, .map, .product, .productBox, .mainProduct, .iconContainer, .containerHead {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.navBack {
+  background-color: #030303;
+}
+
+.containerHead {
+  padding: 10px 0;
+}
+
+.headerLogo {
+  margin-top: 6px;
+}
+
+h1 {
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  color: #d4d4d4;
+}
+
+.itemsBackgrounds {
+  background-color: #383838;
+}
+
+.myFont {
+  padding: 10px;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+  color: #d4d4d4;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.myFont:hover {
+  color: goldenrod;
+}
+
+/*mapas*/
+/*Mixin*/
+/*extends*/
+.redesUl, .map, .product, .productBox, .mainProduct, .iconContainer, .containerHead {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.iconContainer {
+  margin: 50px auto;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  width: 85%;
+  background-color: #3a3a3ab0;
+}
+
+.titleProduct {
+  padding-top: 35px;
+  text-align: center;
+}
+
+.iconBox {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.textIcon {
+  color: #d4d4d4;
+  text-align: center;
+  padding-top: 18px;
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+}
+
+.mainProduct {
+  flex-wrap: wrap;
+}
+
+.productBox {
+  padding-top: 80px;
+  margin: 40px auto;
+}
+
+.product {
+  color: #030303;
+  padding: 50px 0;
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.cardBack {
+  background-color: #a3a3a3;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.26);
+}
+.cardBack:hover {
+  border: 1px solid #161616;
+}
+
+.card-title {
+  height: 80px;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.buttonBack {
+  padding: 4px 12px;
+  border-radius: 5px;
+  background-color: goldenrod;
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+  text-decoration: none;
+  color: #030303;
+  border: 1px solid coral;
+}
+.buttonBack:hover {
+  color: #030303;
+}
+
+.sectionTwo {
+  margin: 45px 0;
+  padding: 50px;
+  background-color: #3a3a3ab0;
+}
+
+.carousel-caption h2 {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+h2 {
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.title, .paragraph {
+  color: #d4d4d4;
+}
+
+.paragraph {
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.map {
+  padding: 30px 0;
+}
+
+/*extends*/
+.redesUl, .containerHead, .iconContainer, .mainProduct, .productBox, .product, .map {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: rgba(218, 165, 32, 0.856);
+}
+
+.footerContainer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+}
+
+h5 {
+  font-weight: bolder;
+  text-align: left;
+}
+
+.contact {
+  margin-bottom: 3px;
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
+}
+
+.redesUl {
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.fab {
+  font-size: 2rem;
+  color: black;
+  padding: 0 10px;
+  transition: 0.2s;
+}
+.fab:hover {
+  transform: scale(1.3);
+}
+
+@media only screen and (max-width: 520px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

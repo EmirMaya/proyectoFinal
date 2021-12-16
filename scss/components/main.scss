@@ -1,0 +1,128 @@
+@import '../base/maps.scss';
+@import '../base/mixins.scss';
+@import '../base/extends.scss';
+main {
+    margin-top: 30px;
+}
+
+.iconContainer {
+    margin: 50px auto;
+    @extend %flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 85%; 
+    background-color: $bg-sec;
+}
+
+.titleProduct {
+   padding-top: 35px; 
+   text-align: center;
+}
+
+.iconBox {
+    padding: 2rem;
+    display: flex;
+    align-items: center;    
+}
+
+.textIcon {
+    color: $color-letter;
+    text-align: center;
+    padding-top: 18px;
+    font-family: $font-fam;
+}
+
+.mainProduct {
+    @extend %flex;
+    flex-wrap: wrap;
+}
+
+.productBox {
+    padding-top: 80px;
+    margin: 40px auto;
+   @extend %flex;
+}
+
+.product {
+    color: $bg-h1;
+    padding: 50px 0;
+    @extend %flex;
+    font-family: $font-fam;
+    font-weight: bolder;
+    text-align: center;
+    transition: 0.3s;
+  
+}
+
+.cardBack {
+    background-color: map-get($productos , bg-prod);
+    &:hover{
+    border:map-get($productos , border-prod );
+    }
+    border-radius: 5px;
+    box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.26);   
+}
+
+.card-title {
+    height: 80px;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.buttonBack {
+    padding: 4px 12px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    font-family: $font-fam;
+    text-decoration: none;
+    color: $bg-h1;
+    &:hover {
+        color: $bg-h1;
+    }
+    @include buttoms;
+}
+
+.sectionTwo {
+    margin: 45px 0;
+    padding: 50px;
+    background-color: $bg-sec;
+}
+
+.carousel-caption h2 {
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+h2 {
+    font-family: $font-fam;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+.title {
+    font-size: 38px;
+}
+
+.title, .paragraph {
+    color: $color-letter;
+}
+
+.paragraph {
+    font-family: $font-fam;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.map {
+    padding: 30px 0;
+    @extend %flex;
+}
+
+
+

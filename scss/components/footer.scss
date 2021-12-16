@@ -1,0 +1,41 @@
+@import '../base/extends.scss';
+footer {
+    background-color: rgba(218, 165, 32, 0.856); 
+}
+
+.footerContainer {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: black;
+    font-family: $font-fam;
+}
+
+h5 {
+    font-weight: bolder;
+    text-align: left;
+}
+
+.contact {
+   margin-bottom: 3px; 
+   font-family: $font-fam;
+}
+
+.redesUl {
+    @extend %flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+
+.fab {
+    font-size: 2rem;
+    color: black;
+    padding: 0 10px;
+    transition: 0.2s;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
