@@ -10,39 +10,142 @@ header {
 
 .navBack {
     background-color: $bg-h1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 18px;
 }
 
-.containerHead {
-    @extend %flex;
-    padding: 10px 0;
+.logoContainer {
+    display: flex;
+    width: 25%;
 }
 
-.headerLogo {
-    margin-top: 6px;
-}
 
-h1 {
+
+.textLogo {
+    font-size: 27px;
     font-family: $font-fam;
     font-style: italic;
     font-weight: bolder;
     color: $color-letter;
 }
 
+.searchContainer {
+    display: flex;
+    width: 50%; 
+}
+
+.searchContainerMobile {
+    display: none;
+}
+
+.searchBar, .searchButton, .loginLink, .cartLink, .myFont {
+    font-family: $font-fam;
+}
+
+.searchBar, .searchButton, .buttonLink {
+    height: 30px;
+}
+
+.searchContainer .searchBar {
+    padding-left: 15px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.searchButton {
+    color: $color-letter;
+    margin-left: 2px;
+    border: none;
+    border-radius: 8px;
+    width: 20%;
+    background-color: $astonm-color;
+    &:hover {
+        background-color: #01c2ab;
+        color: $bg-sec;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.loginContainer {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.loginContainerMobile {
+    display: none;
+    width: 45%;
+}
+
+.buttonLink {
+    width: 40%;
+    background-color:  $astonm-color;
+    border-radius: 8px;
+    text-align: center;
+    &:hover {
+        background-color: #01c2ab;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.loginLink {
+    text-decoration: none;
+    color: $color-letter;
+    &:hover {
+      color: $bg-sec;
+    }
+}
+
+.cartLink {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartText {
+    color: $color-letter;
+    font-size: 13px;
+    margin: 0;
+}
+
+.fas {
+    color: $astonm-color;
+    padding: 0 40px;
+    font-size: 25px;
+    &:hover {
+        color: #01c2ab;
+    }
+}
+
 .itemsBackgrounds {
-    background-color: $bg-menu;
-    
+    background-image: linear-gradient(to right,  #006F62 , #01c2ab); 
 }
 
 .myFont {
     padding: 10px;
     list-style-type: none;
     text-decoration: none;
-    font-family: $font-fam;
     color: $color-letter;
     font-size: 20px;
     font-weight: bolder;
     &:hover {
-        color: goldenrod;
+        color: $bg-sec  ;
     }
 }
 

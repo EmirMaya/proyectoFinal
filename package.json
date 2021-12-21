@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmirMaya/proyectoFinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmirMaya/proyectoFinal/issues"
+  },
+  "homepage": "https://github.com/EmirMaya/proyectoFinal#readme",
   "description": ""
 }

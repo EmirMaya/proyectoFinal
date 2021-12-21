@@ -1,11 +1,115 @@
+/*MEDIAS QUERIES*/
+
+@media only screen and (max-width: 1200px) and (min-width:521px){
+  
+    .logoContainer {
+        width: 60%;
+    }
+    
+    .searchContainer{
+        display: none;
+    }
+
+    .searchContainerMobile {
+        background-color: $bg-sec;
+        display: flex;
+        justify-content: start;
+        padding: 10px
+    }
+
+    .searchBar {
+        width: 80%;
+        border-radius: 8px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    .searchButton {
+        font-size: 14px;
+    }
+
+    .loginContainer {
+        padding-left: 10px;
+        width: 40%;
+    }
+
+    .buttonLink {
+        width: 100%;
+    }
+
+    .loginLink {
+        font-size: 14px;
+    }
+  
+    .fas {
+      font-size: 20px;
+   }
+
+
+}
+
 
 
 @media only screen and (max-width: 520px)  {
+    /*HEADER*/
+    .logoContainer {
+        width: 100%;
+        justify-content: center;
+    }
+    .searchContainer, .loginContainer{
+        display: none;
+    }
     
-    .headerLogo {
-        margin-top: 0;
+    .searchContainerMobile {
+      background-color: $bg-sec;
+      display: flex;
+      justify-content: start;
+      padding: 10px;
     }
 
+    .searchBar {
+        width: 80%;
+        border-radius: 8px;
+        padding-left: 5px;
+        font-size: 12px;
+    }
+
+    .searchButton {
+        font-size: 12px;
+    }
+
+    .loginContainerMobile {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .fas {
+        font-size: 18px;
+        color: $bg-sec;
+    }
+
+    .loginContainerMobile .buttonLink {
+        background-color: $bg-sec;
+        width: 50%;
+        &:active {
+            background-color: $bg-sec;
+        }
+    }
+
+    .cartLink {
+        width: 30%;
+    }
+
+    .loginContainerMobile .loginLink {
+        font-size: 12px;
+        width: 50%;
+        &:active{
+            color:#01c2ab; 
+        }
+    }
+
+
+    /* FIN HEADER*/
     .title {
         font-size: 22px;
     } 
@@ -13,4 +117,8 @@
     .paragraph {
         font-size: 14px;
     }
+
+   
+
+   
 }

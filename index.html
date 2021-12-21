@@ -53,18 +53,51 @@
 <body class="bodyContainer">
     <!-- HEADER -->
     <header>
-        <nav class=" navbar-light navBack">
-            <div class="container-fluid containerHead">
+        <nav class="navbar-light navBack">
+            <div class="logoContainer">
                 <a class="displayLogo" href="./index.html">
                     <img src="./multimedia/logo.png" alt="logo" width="55" height="35"
-                        class="d-inline-block align-text-top headerLogo">
+                        class="d-inline-block align-text-top">
                 </a>
-                <h1 class="navFont">ANDREW BIKES</h1>
+                <h1 class="textLogo">ANDREW BIKES</h1>
             </div>
+
+            <div class="searchContainer">
+                <input class="searchBar" type="search" placeholder="¿Qué estás buscando?">
+                <button class="searchButton" type="submit">Buscar</button>
+            </div>
+
+
+            <div class="loginContainer">
+                <div class="buttonLink">
+                    <a class="loginLink" href="">Ingresar</a>
+                </div>
+                <a class="cartLink" href="">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p class="cartText">Carrito</p>
+                </a>
+            </div>
+
         </nav>
+
+        <!-- Buscador para mobile -->
+        <div class="searchContainerMobile">
+            <input class="searchBar" type="search" placeholder="¿Qué estás buscando?">
+            <button class="searchButton" type="submit">Buscar</button>
+        </div>
+
 
         <nav class="navbar navbar-expand-lg navbar-light itemsBackgrounds">
             <div class="container-fluid">
+                <!-- Barra para mobile -->
+                <div class="loginContainerMobile">
+                    <a class="cartLink" href="">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="buttonLink">
+                        <a class="loginLink" href="">Ingresar</a>
+                    </div>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
