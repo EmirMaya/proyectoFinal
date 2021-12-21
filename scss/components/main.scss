@@ -4,7 +4,7 @@
 // main {
 //     margin-top: 30px;
 // }
-
+/*MAIN*/
 .prodTitle {
     color: $bg-h1;
     padding-top: 120px;
@@ -87,7 +87,7 @@
 .buttonBack {
     padding: 4px 12px;
     border-radius: 5px;
-    background-color: goldenrod;
+    background-color: $button-color;
     font-family: $font-fam;
     text-decoration: none;
     color: $bg-h1;
@@ -133,5 +133,5 @@ h2 {
     @extend %flex;
 }
 
-
+/*FIN MAIN*/
 

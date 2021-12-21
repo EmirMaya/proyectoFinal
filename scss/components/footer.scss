@@ -1,25 +1,69 @@
 @import '../base/extends.scss';
 footer {
-    background-color: rgba(218, 165, 32, 0.856); 
+    background-image: linear-gradient($astonm-color, $button-color);
 }
 
-.footerContainer {
-    padding-top: 30px;
+.contactContainer {
+    margin: 0 20px;
+    padding: 20px 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    color: black;
+    color:  $color-letter;
     font-family: $font-fam;
+    border-bottom: 1px solid $astonm-color;
 }
 
-h5 {
-    font-weight: bolder;
+.mailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+}
+
+.mailBar {
+    padding-left: 10px;
+    margin-right: 2px;
+    width: 45%;
+    border: none;
+    height: 30px;
+    border-radius: 8px;
+    
+}
+
+.suscribeButton {
+    border: none;
+    margin-left: 2px;
+    border-radius: 8px;
+    width: 40%;
+    height: 30px;
+    background-color: $bg-sec;
+    color: $color-letter;
+    &:hover {
+        color: $button-color;
+    }
+}
+
+
+.redContainer {
+ width: 40%;
+}
+
+.contactText {
+    padding-right: 10px;
+    font-size: 15px;
     text-align: left;
+    margin: 0;
 }
 
-.contact {
-   margin-bottom: 3px; 
-   font-family: $font-fam;
+.iconsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.navRedes {
+  padding-top: 20px;
 }
 
 .redesUl {
@@ -31,7 +75,7 @@ h5 {
 
 .fab {
     font-size: 2rem;
-    color: black;
+    color: $bg-sec;
     padding: 0 10px;
     transition: 0.2s;
     &:hover {
@@ -39,3 +83,11 @@ h5 {
     }
 }
 
+.copyrightBox {
+    padding: 10px 0;
+}
+
+.copyrightText {
+    text-align: center;
+    color: $bg-sec;
+}

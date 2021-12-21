@@ -1,7 +1,7 @@
 /*MEDIAS QUERIES*/
 
 @media only screen and (max-width: 1200px) and (min-width:521px){
-  
+  /*HEADER*/
     .logoContainer {
         width: 60%;
     }
@@ -44,6 +44,21 @@
     .fas {
       font-size: 20px;
    }
+
+   /*FIN HEADER*/
+
+    /*FOOTER*/
+    .mailContainer {
+        width: 60%;
+    }
+    .mailBar {
+        margin-top: 10px;
+    }
+
+    .suscribeButton {
+        width: 40%;
+    }
+     /*FIN FOOTER*/
 
 
 }
@@ -104,7 +119,7 @@
         font-size: 12px;
         width: 50%;
         &:active{
-            color:#01c2ab; 
+            color: $button-color; 
         }
     }
 
@@ -118,6 +133,22 @@
         font-size: 14px;
     }
 
+    /* FOOTER*/
+
+    .contactText {
+        padding-bottom: 10px;
+    }
+    .mailContainer {
+        width: 100%;
+    }
+    .suscribeButton{
+        width: 50%;
+    }
+
+    .copyrightText {
+        font-size: 12px;
+    }
+    /* FIN FOOTER*/
    
 
    

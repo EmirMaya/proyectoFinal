@@ -64,7 +64,7 @@ header {
     width: 20%;
     background-color: $astonm-color;
     &:hover {
-        background-color: #01c2ab;
+        background-color: $button-color;
         color: $bg-sec;
     }
 
@@ -92,7 +92,7 @@ header {
     border-radius: 8px;
     text-align: center;
     &:hover {
-        background-color: #01c2ab;
+        background-color: $button-color;
     }
 
     &:active {
@@ -129,12 +129,12 @@ header {
     padding: 0 40px;
     font-size: 25px;
     &:hover {
-        color: #01c2ab;
+        color: $button-color;
     }
 }
 
 .itemsBackgrounds {
-    background-image: linear-gradient(to right,  #006F62 , #01c2ab); 
+    background-image: linear-gradient($astonm-color , $button-color); 
 }
 
 .myFont {
