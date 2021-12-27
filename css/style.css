@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  font-family: "Shippori Antique B1", Roboto, sans-serif;
 }
 
 .bodyContainer {
@@ -10,20 +11,20 @@
 }
 
 /*extends*/
-.redesUl, .map, .product, .productBox, .mainProduct, .iconContainer {
+.redesUl, .wspContainer .wsp, .mapContainer, .product, .productBox, .mainProduct, .iconContainer {
   display: flex;
   justify-content: center;
 }
 
-header {
-  position: relative;
+.headerContainer {
+  position: sticky;
   width: 100%;
   z-index: 10;
   top: 0;
 }
 
 .navBack {
-  background-color: #0e0e0e;
+  background-color: #161616;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +38,6 @@ header {
 
 .textLogo {
   font-size: 27px;
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
   font-style: italic;
   font-weight: bolder;
   color: #f0f0f0;
@@ -50,10 +50,6 @@ header {
 
 .searchContainerMobile {
   display: none;
-}
-
-.searchBar, .searchButton, .loginLink, .cartLink, .myFont {
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
 }
 
 .searchBar, .searchButton, .buttonLink {
@@ -78,7 +74,7 @@ header {
 }
 .searchButton:hover {
   background-color: #01c2ab;
-  color: #1d1d1dd5;
+  color: #161616d5;
 }
 .searchButton:active {
   position: relative;
@@ -116,7 +112,7 @@ header {
   color: #f0f0f0;
 }
 .loginLink:hover {
-  color: #1d1d1dd5;
+  color: #161616d5;
 }
 
 .cartLink {
@@ -145,6 +141,7 @@ header {
 
 .itemsBackgrounds {
   background-image: linear-gradient(#006F62, #01c2ab);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.26);
 }
 
 .myFont {
@@ -156,26 +153,24 @@ header {
   font-weight: bolder;
 }
 .myFont:hover {
-  color: #1d1d1dd5;
+  color: #161616d5;
 }
 
 /*mapas*/
 /*Mixin*/
 /*extends*/
-.redesUl, .map, .product, .productBox, .mainProduct, .iconContainer {
+.redesUl, .wspContainer .wsp, .mapContainer, .product, .productBox, .mainProduct, .iconContainer {
   display: flex;
   justify-content: center;
 }
 
 /*MAIN*/
 .prodTitle {
-  color: #0e0e0e;
-  padding-top: 120px;
+  color: #161616d5;
+  padding-top: 40px;
   font-style: normal;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 25px;
-  font-weight: bolder;
+  font-size: 28px;
+  border-bottom: 1px solid #01c2ab;
 }
 
 .iconContainer {
@@ -183,7 +178,7 @@ header {
   flex-wrap: wrap;
   border-radius: 5px;
   width: 85%;
-  background-color: #1d1d1dd5;
+  background-color: #161616d5;
 }
 
 .titleProduct {
@@ -204,18 +199,27 @@ header {
   font-family: "Shippori Antique B1", Roboto, sans-serif;
 }
 
+.sectionProduct {
+  padding: 50px;
+}
+
+.titleSect {
+  text-align: center;
+  border-bottom: 1px solid #01c2ab;
+}
+
 .mainProduct {
   flex-wrap: wrap;
 }
 
 .productBox {
-  margin: 40px auto;
+  margin: 20px auto;
+  padding: 0 50px;
 }
 
 .product {
-  color: #0e0e0e;
+  color: #161616;
   padding: 50px 0;
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
   font-weight: bolder;
   text-align: center;
   transition: 0.3s;
@@ -231,7 +235,8 @@ header {
 }
 
 .card-title {
-  height: 80px;
+  font-size: 22px;
+  height: 60px;
 }
 
 .card-img-top {
@@ -244,53 +249,85 @@ header {
   padding: 4px 12px;
   border-radius: 5px;
   background-color: #01c2ab;
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
   text-decoration: none;
-  color: #0e0e0e;
+  color: #161616;
   border: 1px solid #006F62;
 }
 .buttonBack:hover {
-  color: #0e0e0e;
+  color: #161616;
+}
+.buttonBack:active {
+  position: relative;
+  top: 1px;
 }
 
 .sectionTwo {
-  margin: 45px 0;
-  padding: 50px;
-  background-color: #1d1d1dd5;
+  margin: 35px 0;
+  padding: 0 60px;
 }
 
 .carousel-caption h2 {
-  background-color: rgba(0, 0, 0, 0.37);
+  background-color: rgba(0, 0, 0, 0.575);
+  border-radius: 8px;
+  font-size: 26px;
 }
 
-h2 {
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
-  font-weight: bolder;
-  font-style: italic;
-  text-align: center;
+.titleParagraph {
+  text-align: left;
+  font-size: 28px;
+  border-bottom: 1px solid #01c2ab;
 }
 
-.title {
-  font-size: 38px;
-}
-
-.title, .paragraph {
-  color: #f0f0f0;
+.titleParagraph, .paragraph {
+  color: #161616d5;
 }
 
 .paragraph {
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
   padding-top: 10px;
-  font-size: 24px;
+  font-size: 18px;
+}
+
+.sectionMap {
+  margin-top: 55px;
+  padding: 0 60px;
+}
+
+.titleMap {
+  font-size: 22px;
+  color: #161616d5;
+  border-bottom: 1px solid #01c2ab;
+}
+
+.mapContainer {
+  padding: 30px 0;
 }
 
 .map {
-  padding: 30px 0;
+  border-radius: 8px;
+}
+
+.wspContainer {
+  width: 60px;
+  height: 60px;
+  background-color: #01c2ab;
+  border-radius: 30px;
+  position: sticky;
+  bottom: 20px;
+  left: 93%;
+}
+
+.wspContainer a {
+  text-decoration: none;
+}
+
+.wspContainer .wsp {
+  align-items: center;
+  padding: 12px;
 }
 
 /*FIN MAIN*/
 /*extends*/
-.redesUl, .iconContainer, .mainProduct, .productBox, .product, .map {
+.redesUl, .iconContainer, .mainProduct, .productBox, .product, .mapContainer, .wspContainer .wsp {
   display: flex;
   justify-content: center;
 }
@@ -307,7 +344,6 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   color: #f0f0f0;
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
   border-bottom: 1px solid #006F62;
 }
 
@@ -333,11 +369,15 @@ footer {
   border-radius: 8px;
   width: 40%;
   height: 30px;
-  background-color: #1d1d1dd5;
+  background-color: #161616d5;
   color: #f0f0f0;
 }
 .suscribeButton:hover {
   color: #01c2ab;
+}
+.suscribeButton:active {
+  position: relative;
+  top: 1px;
 }
 
 .redContainer {
@@ -367,7 +407,7 @@ footer {
 
 .fab {
   font-size: 2rem;
-  color: #1d1d1dd5;
+  color: #161616d5;
   padding: 0 10px;
   transition: 0.2s;
 }
@@ -381,7 +421,7 @@ footer {
 
 .copyrightText {
   text-align: center;
-  color: #1d1d1dd5;
+  color: #161616d5;
 }
 
 /*MEDIAS QUERIES*/
@@ -396,7 +436,7 @@ footer {
   }
 
   .searchContainerMobile {
-    background-color: #1d1d1dd5;
+    background-color: #161616d5;
     display: flex;
     justify-content: start;
     padding: 10px;
@@ -458,7 +498,7 @@ footer {
   }
 
   .searchContainerMobile {
-    background-color: #1d1d1dd5;
+    background-color: #161616d5;
     display: flex;
     justify-content: start;
     padding: 10px;
@@ -482,15 +522,15 @@ footer {
 
   .fas {
     font-size: 18px;
-    color: #1d1d1dd5;
+    color: #161616d5;
   }
 
   .loginContainerMobile .buttonLink {
-    background-color: #1d1d1dd5;
+    background-color: #161616d5;
     width: 50%;
   }
   .loginContainerMobile .buttonLink:active {
-    background-color: #1d1d1dd5;
+    background-color: #161616d5;
   }
 
   .cartLink {

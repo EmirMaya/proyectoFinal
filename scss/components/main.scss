@@ -1,18 +1,14 @@
 @import '../base/maps.scss';
 @import '../base/mixins.scss';
 @import '../base/extends.scss';
-// main {
-//     margin-top: 30px;
-// }
+
 /*MAIN*/
 .prodTitle {
-    color: $bg-h1;
-    padding-top: 120px;
+    color: $bg-sec;
+    padding-top: 40px;
     font-style: normal;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: 28px;
+    border-bottom: 1px solid $button-color;
 }
 
 .iconContainer {
@@ -42,13 +38,23 @@
     font-family: $font-fam;
 }
 
+.sectionProduct {
+    padding: 50px;
+}
+
+.titleSect {
+    text-align: center;
+    border-bottom: 1px solid $button-color;
+}
+
 .mainProduct {
     @extend %flex;
     flex-wrap: wrap;
 }
 
 .productBox {
-    margin: 40px auto;
+    margin: 20px auto;
+    padding: 0 50px;
    @extend %flex;
 }
 
@@ -56,7 +62,6 @@
     color: $bg-h1;
     padding: 50px 0;
     @extend %flex;
-    font-family: $font-fam;
     font-weight: bolder;
     text-align: center;
     transition: 0.3s;
@@ -73,7 +78,8 @@
 }
 
 .card-title {
-    height: 80px;
+    font-size: 22px;
+    height: 60px;
 }
 
 .card-img-top {
@@ -88,49 +94,86 @@
     padding: 4px 12px;
     border-radius: 5px;
     background-color: $button-color;
-    font-family: $font-fam;
     text-decoration: none;
     color: $bg-h1;
     &:hover {
         color: $bg-h1;
     }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
     @include buttoms;
 }
 
 .sectionTwo {
-    margin: 45px 0;
-    padding: 50px;
-    background-color: $bg-sec;
+    margin: 35px 0;
+    padding: 0 60px;
 }
 
 .carousel-caption h2 {
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 8px;
+    font-size: 26px;
 }
 
-h2 {
-    font-family: $font-fam;
-    font-weight: bolder;
-    font-style: italic;
-    text-align: center;
+
+
+.titleParagraph {
+    text-align: left;
+    font-size: 28px;
+    border-bottom: 1px solid $button-color;
 }
 
-.title {
-    font-size: 38px;
-}
-
-.title, .paragraph {
-    color: $color-letter;
+.titleParagraph, .paragraph {
+    color: $bg-sec;
 }
 
 .paragraph {
-    font-family: $font-fam;
     padding-top: 10px;
-    font-size: 24px;
+    font-size: 18px;
+}
+
+.sectionMap {
+    margin-top: 55px;
+    padding: 0 60px;
+}
+
+.titleMap {
+    font-size: 22px;
+    color: $bg-sec;
+    border-bottom: 1px solid $button-color;
+}
+
+.mapContainer {
+    padding: 30px 0;
+    @extend %flex;
 }
 
 .map {
-    padding: 30px 0;
+    border-radius: 8px;
+}
+
+.wspContainer {
+    width: 60px;
+    height: 60px;
+    background-color: $button-color;
+    border-radius: 30px;
+    position:sticky;
+    bottom: 20px;
+    left:93%;
+}
+
+.wspContainer a{
+    text-decoration: none
+}
+
+
+.wspContainer .wsp {
     @extend %flex;
+    align-items: center;
+    padding: 12px;
 }
 
 /*FIN MAIN*/
