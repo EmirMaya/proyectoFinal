@@ -11,11 +11,13 @@
     border-bottom: 1px solid $button-color;
 }
 
+.iconContainer, .mainProduct, .productBox, .product, .mapContainer {
+    @extend %flex;
+}
+
 .iconContainer {
     margin: 50px auto;
-    @extend %flex;
     flex-wrap: wrap;
-    border-radius: 5px;
     width: 85%; 
     background-color: $bg-sec;
 }
@@ -32,10 +34,8 @@
 }
 
 .textIcon {
-    color: $color-letter;
     text-align: center;
     padding-top: 18px;
-    font-family: $font-fam;
 }
 
 .sectionProduct {
@@ -48,20 +48,17 @@
 }
 
 .mainProduct {
-    @extend %flex;
     flex-wrap: wrap;
 }
 
 .productBox {
     margin: 20px auto;
     padding: 0 50px;
-   @extend %flex;
 }
 
 .product {
     color: $bg-h1;
     padding: 50px 0;
-    @extend %flex;
     font-weight: bolder;
     text-align: center;
     transition: 0.3s;
@@ -73,7 +70,6 @@
     &:hover{
     border:map-get($productos , border-prod );
     }
-    border-radius: 5px;
     box-shadow:  0px 1px 5px rgba(0, 0, 0, 0.26);   
 }
 
@@ -92,7 +88,6 @@
 
 .buttonBack {
     padding: 4px 12px;
-    border-radius: 5px;
     background-color: $button-color;
     text-decoration: none;
     color: $bg-h1;
@@ -148,10 +143,9 @@
 
 .mapContainer {
     padding: 30px 0;
-    @extend %flex;
 }
 
-.map {
+.map, .loginButton, .loginSection, .loginBar, .iconContainer, .cardBack, .buttonBack {
     border-radius: 8px;
 }
 
@@ -182,7 +176,6 @@
 
 .loginSection {
     margin:20px 60px 60px;
-    border-radius: 8px;
     padding: 50px;
     background-color: $bg-sec;
 }
@@ -199,14 +192,16 @@
     width: 60%;
 }
 
+.loginText, .regisIng, .loginButton, .textIcon {
+    color: $color-letter;
+}
+
  .loginText {
     font-size: 16px;
-    color: $color-letter;
 }
 
 .loginBar {
     height: 30px;
-    border-radius: 8px;
     padding-left: 5px;
     margin-bottom: 15px;
     &:focus { outline: none;
@@ -217,7 +212,6 @@
 .nameContainer {
     display: flex;
     flex-direction: row;
-    
     width: 60%;
 }
 
@@ -233,7 +227,6 @@
 
 .regisIng {
     text-align: center;
-    color: $color-letter;
     padding-top: 5px;
     font-size: 12px;
     text-decoration: none;
@@ -244,10 +237,8 @@
 
 .loginButton {
     height: 30px;
-    color: $color-letter;
     margin-left: 2px;
     border: none;
-    border-radius: 8px;
     width: 20%;
     background-color: $astonm-color;
     &:hover {

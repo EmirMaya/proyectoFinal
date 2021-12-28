@@ -3,6 +3,10 @@ footer {
     background-image: linear-gradient($astonm-color, $button-color);
 }
 
+.contactContainer, .suscribeButton {
+    color:  $color-letter;
+}
+
 .contactContainer {
     margin: 0 20px;
     padding: 20px 30px;
@@ -10,7 +14,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    color:  $color-letter;
     border-bottom: 1px solid $astonm-color;
 }
 
@@ -40,7 +43,6 @@ footer {
     width: 40%;
     height: 30px;
     background-color: $bg-sec;
-    color: $color-letter;
     &:hover {
         color: $button-color;
     }

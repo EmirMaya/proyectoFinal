@@ -45,9 +45,13 @@
       font-size: 20px;
    }
 
-   
+   .navLink {
+    font-size: 18px;
+   }
 
    /*FIN HEADER*/
+
+   /*MAIN*/
    .loginText {
        font-size: 14px;
    }
@@ -60,6 +64,8 @@
     .regisIng {
         font-size: 10px;
     }
+
+     /*FIN MAIN*/
 
     /*FOOTER*/
     .mailContainer {
@@ -75,6 +81,13 @@
      /*FIN FOOTER*/
 
 
+}
+
+
+@media only screen and (max-width: 991px)  {
+    .nav-item {
+        border-bottom: 1px solid $bg-sec;
+    }
 }
 
 
@@ -136,6 +149,11 @@
             color: $button-color; 
         }
     }
+     
+    .navLink {
+        font-size: 14px;
+    }
+
 
 
     /* FIN HEADER*/

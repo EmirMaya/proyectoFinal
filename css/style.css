@@ -11,11 +11,12 @@
 }
 
 /*extends*/
-.redesUl, .wspContainer .wsp, .mapContainer, .product, .productBox, .mainProduct, .iconContainer {
+.redesUl, .wspContainer .wsp, .iconContainer, .mainProduct, .productBox, .product, .mapContainer {
   display: flex;
   justify-content: center;
 }
 
+/*HEADER*/
 .headerContainer {
   position: sticky;
   width: 100%;
@@ -36,11 +37,14 @@
   width: 25%;
 }
 
+.textLogo, .searchButton, .loginLink, .cartText, .navLink {
+  color: #f0f0f0;
+}
+
 .textLogo {
   font-size: 27px;
   font-style: italic;
   font-weight: bolder;
-  color: #f0f0f0;
 }
 
 .searchContainer {
@@ -68,7 +72,6 @@
 }
 
 .searchButton {
-  color: #f0f0f0;
   margin-left: 2px;
   border: none;
   border-radius: 8px;
@@ -112,7 +115,6 @@
 
 .loginLink {
   text-decoration: none;
-  color: #f0f0f0;
 }
 .loginLink:hover {
   color: #2c2c2c;
@@ -128,7 +130,6 @@
 }
 
 .cartText {
-  color: #f0f0f0;
   font-size: 13px;
   margin: 0;
 }
@@ -147,22 +148,22 @@
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.26);
 }
 
-.myFont {
+.navLink {
   padding: 10px;
   list-style-type: none;
   text-decoration: none;
-  color: #f0f0f0;
   font-size: 20px;
   font-weight: bolder;
 }
-.myFont:hover {
+.navLink:hover {
   color: #2c2c2c;
 }
 
+/*FIN HEADER*/
 /*mapas*/
 /*Mixin*/
 /*extends*/
-.redesUl, .wspContainer .wsp, .mapContainer, .product, .productBox, .mainProduct, .iconContainer {
+.redesUl, .wspContainer .wsp, .iconContainer, .mainProduct, .productBox, .product, .mapContainer {
   display: flex;
   justify-content: center;
 }
@@ -179,7 +180,6 @@
 .iconContainer {
   margin: 50px auto;
   flex-wrap: wrap;
-  border-radius: 5px;
   width: 85%;
   background-color: #2c2c2c;
 }
@@ -196,10 +196,8 @@
 }
 
 .textIcon {
-  color: #f0f0f0;
   text-align: center;
   padding-top: 18px;
-  font-family: "Shippori Antique B1", Roboto, sans-serif;
 }
 
 .sectionProduct {
@@ -230,7 +228,6 @@
 
 .cardBack {
   background-color: #eeeeee;
-  border-radius: 5px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.26);
 }
 .cardBack:hover {
@@ -250,7 +247,6 @@
 
 .buttonBack {
   padding: 4px 12px;
-  border-radius: 5px;
   background-color: #01c2ab;
   text-decoration: none;
   color: #161616;
@@ -305,7 +301,7 @@
   padding: 30px 0;
 }
 
-.map {
+.map, .loginButton, .loginSection, .loginBar, .iconContainer, .cardBack, .buttonBack {
   border-radius: 8px;
 }
 
@@ -334,7 +330,6 @@
 
 .loginSection {
   margin: 20px 60px 60px;
-  border-radius: 8px;
   padding: 50px;
   background-color: #2c2c2c;
 }
@@ -351,14 +346,16 @@
   width: 60%;
 }
 
+.loginText, .regisIng, .loginButton, .textIcon {
+  color: #f0f0f0;
+}
+
 .loginText {
   font-size: 16px;
-  color: #f0f0f0;
 }
 
 .loginBar {
   height: 30px;
-  border-radius: 8px;
   padding-left: 5px;
   margin-bottom: 15px;
 }
@@ -384,7 +381,6 @@
 
 .regisIng {
   text-align: center;
-  color: #f0f0f0;
   padding-top: 5px;
   font-size: 12px;
   text-decoration: none;
@@ -395,10 +391,8 @@
 
 .loginButton {
   height: 30px;
-  color: #f0f0f0;
   margin-left: 2px;
   border: none;
-  border-radius: 8px;
   width: 20%;
   background-color: #006F62;
 }
@@ -422,6 +416,10 @@ footer {
   background-image: linear-gradient(#006F62, #01c2ab);
 }
 
+.contactContainer, .suscribeButton {
+  color: #f0f0f0;
+}
+
 .contactContainer {
   margin: 0 20px;
   padding: 20px 30px;
@@ -429,7 +427,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  color: #f0f0f0;
   border-bottom: 1px solid #006F62;
 }
 
@@ -459,7 +456,6 @@ footer {
   width: 40%;
   height: 30px;
   background-color: #2c2c2c;
-  color: #f0f0f0;
 }
 .suscribeButton:hover {
   color: #01c2ab;
@@ -559,7 +555,12 @@ footer {
     font-size: 20px;
   }
 
+  .navLink {
+    font-size: 18px;
+  }
+
   /*FIN HEADER*/
+  /*MAIN*/
   .loginText {
     font-size: 14px;
   }
@@ -573,6 +574,7 @@ footer {
     font-size: 10px;
   }
 
+  /*FIN MAIN*/
   /*FOOTER*/
   .mailContainer {
     width: 60%;
@@ -587,6 +589,11 @@ footer {
   }
 
   /*FIN FOOTER*/
+}
+@media only screen and (max-width: 991px) {
+  .nav-item {
+    border-bottom: 1px solid #2c2c2c;
+  }
 }
 @media only screen and (max-width: 520px) {
   /*HEADER*/
@@ -645,6 +652,10 @@ footer {
   }
   .loginContainerMobile .loginLink:active {
     color: #01c2ab;
+  }
+
+  .navLink {
+    font-size: 14px;
   }
 
   /* FIN HEADER*/
