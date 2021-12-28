@@ -19,6 +19,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     width: 60%;
+   
 }
 
 .mailBar {
@@ -28,7 +29,8 @@ footer {
     border: none;
     height: 30px;
     border-radius: 8px;
-    
+    &:focus { outline: none;
+    }
 }
 
 .suscribeButton {

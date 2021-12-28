@@ -51,6 +51,8 @@
     border: none;
     border-radius: 8px;
     width: 80%;
+    &:focus { outline: none;
+    }
 }
 
 .searchButton {

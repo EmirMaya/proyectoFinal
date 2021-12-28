@@ -176,5 +176,89 @@
     padding: 12px;
 }
 
+.loginTitle {
+    margin: 0 60px;
+}
+
+.loginSection {
+    margin:20px 60px 60px;
+    border-radius: 8px;
+    padding: 50px;
+    background-color: $bg-sec;
+}
+
+.loginSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginInfo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+ .loginText {
+    font-size: 16px;
+    color: $color-letter;
+}
+
+.loginBar {
+    height: 30px;
+    border-radius: 8px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    &:focus { outline: none;
+    }
+}
+
+
+.nameContainer {
+    display: flex;
+    flex-direction: row;
+    
+    width: 60%;
+}
+
+.loginSection form .loginInfo.nameContainer div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.loginBar.nameBar {
+    margin-right: 5px;
+}
+
+.regisIng {
+    text-align: center;
+    color: $color-letter;
+    padding-top: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    &:hover {
+        color: $button-color;
+    }
+}
+
+.loginButton {
+    height: 30px;
+    color: $color-letter;
+    margin-left: 2px;
+    border: none;
+    border-radius: 8px;
+    width: 20%;
+    background-color: $astonm-color;
+    &:hover {
+        background-color: $button-color;
+        color: $bg-sec;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
 /*FIN MAIN*/
 

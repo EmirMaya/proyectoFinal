@@ -30,7 +30,7 @@
 
     .loginContainer {
         padding-left: 10px;
-        width: 40%;
+        width: 30%;
     }
 
     .buttonLink {
@@ -45,7 +45,21 @@
       font-size: 20px;
    }
 
+   
+
    /*FIN HEADER*/
+   .loginText {
+       font-size: 14px;
+   }
+
+   .loginButton {
+     font-size: 12px;
+     width: 30%;
+    }
+
+    .regisIng {
+        font-size: 10px;
+    }
 
     /*FOOTER*/
     .mailContainer {
@@ -125,6 +139,8 @@
 
 
     /* FIN HEADER*/
+
+    /* MAIN*/
     .title {
         font-size: 22px;
     } 
@@ -132,6 +148,48 @@
     .paragraph {
         font-size: 14px;
     }
+
+    .loginSection {
+        margin:10px 30px 30px;
+        border-radius: 8px;
+        padding: 30px;
+        background-color: $bg-sec;
+    }
+
+    .loginText {
+        font-size: 12px;
+    }
+
+    .loginBar {
+        width: 100%;
+    }
+
+    .loginButton {
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .regisIng {
+        font-size: 10px;
+    }
+
+    .loginInfo.nameContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .loginSection form .loginInfo.nameContainer div {
+        width: 100%;
+    }
+
+    .loginInfo {
+        width: 100%;
+    }
+
+    
+    /* FIN MAIN*/
 
     /* FOOTER*/
 
